@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,51 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
+
 <body>
     <script src="js/bootstrap.js"></script>
+    <nav class="navbar navbar-expand-lg bg-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navigation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form class="row g-3" action="results.html" method="get">
+        <div class="col-md-4">
+            <label for="fname" class="form-label">First name</label>
+            <input type="text" class="form-control " id="fname" placeholder="John" required>
+        </div>
+        <div class="col-md-4">
+            <label for="lname" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Doe" required>
+        </div>
+        <div class="col-md-3">
+            <label for="email" class="form-label">E-Mail</label>
+            <input type="email" class="form-control" id="email" placeholder="johndoe@website.com" required>
+        </div>
+        <div class="col-8">
+            <label for="msg" class="form-label">Message</label>
+            <textarea class="form-control" id="msg" placeholder="Send me a message" required></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
 </body>
+
 </html>
